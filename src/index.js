@@ -2,6 +2,7 @@ const uiGroups = require('nova-colors').uiGroups
 const syntaxGroups = require('nova-colors').syntaxGroups
 const ansiGroups = require('nova-colors').ansiGroups
 const versionControlGroups = require('nova-colors').versionControlGroups
+const bg = '#263238';
 
 const sourceString =`
 " ==================================================================
@@ -11,7 +12,7 @@ const sourceString =`
 function! s:highlight_helper(...)
   let l:syntax_group = a:1
   let l:foreground_color = a:2
-  let l:background_color = empty(a:3) ? "${uiGroups.background}" : a:3
+  let l:background_color = empty(a:3) ? "${bg}" : a:3
   let l:gui = a:0 == 3 ? "None" : a:4
 
   exec "highlight " . l:syntax_group . " guifg=" . l:foreground_color . " guibg=" . l:background_color . " gui=" . l:gui . " cterm=NONE term=NONE"
