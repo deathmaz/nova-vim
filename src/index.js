@@ -4,6 +4,7 @@ const ansiGroups = require('nova-colors').ansiGroups
 const versionControlGroups = require('nova-colors').versionControlGroups
 const bg = '#263238';
 const CursorLine = '#39464d';
+const ColorColumn = '#303b41';
 
 const sourceString =`
 " ==================================================================
@@ -105,7 +106,7 @@ call s:highlight_helper("VertSplit", "${uiGroups.backgroundShade}", "")
 call s:highlight_helper("StatusLineNC", "${uiGroups.gray3}", "${uiGroups.backgroundShade}")
 call s:highlight_helper("Pmenu", "${uiGroups.foreground}", "${uiGroups.gray2}")
 call s:highlight_helper("PmenuSbar", "${uiGroups.gray4}", "${uiGroups.gray4}")
-call s:highlight_helper("ColorColumn", "${uiGroups.gray2}", "")
+call s:highlight_helper("ColorColumn", "${uiGroups.gray2}", "${ ColorColumn }")
 call s:highlight_helper("CtrlPStats", "${syntaxGroups.special}", "")
 call s:highlight_helper("fzf1", "${uiGroups.background}", "${uiGroups.gray2}")
 call s:highlight_helper("fzf2", "${uiGroups.background}", "${uiGroups.gray2}")
