@@ -92,7 +92,7 @@ call s:highlight_helper("GitGutterDelete", "#DF8C8C", "")
 " OTHER
 call s:highlight_helper("SignColumn", "NONE", "")
 call s:highlight_helper("LineNr", "#6A7D89", "")
-call s:highlight_helper("CursorLine", "NONE", "#556873")
+call s:highlight_helper("CursorLine", "NONE", "#39464d")
 call s:highlight_helper("CursorColumn", "#556873", "")
 call s:highlight_helper("EndOfBuffer", "#556873", "")
 call s:highlight_helper("VertSplit", "#1E272C", "")
